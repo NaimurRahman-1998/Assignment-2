@@ -7,6 +7,7 @@
 
 body {
     font-family: 'Work Sans', sans-serif;
+    background-color: #f8f8f8;
 }
 
 /*---------------------------- overall End ------------------------------*/
@@ -14,6 +15,7 @@ body {
 
 /*---------------------------- Header Start ------------------------------*/
 .header {
+    /* border: 5px solid red; */
     background-color: rgba(255, 143, 14, 0.192);
 }
 
@@ -241,6 +243,8 @@ ul li ul li {
 
 .box {
     /* border: 5px solid yellow; */
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0.5px 0.5px #ffffff;
 }
 
 .box>h3 {
@@ -395,4 +399,113 @@ ul li ul li {
     padding: 25px 0;
     margin-top: 60px;
     background: #FFF4E7;
+}
+
+
+@media only screen and (max-width:650px) {
+    body{
+        /* background-color: #FF900E; */
+    }
+    header{
+        width: 80%;
+    }
+    nav {
+        flex-wrap: wrap;
+    
+    }
+    .section-text>button{
+        margin-top: 5px;
+        font-size: 10px;
+    }
+
+    nav>ul {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+    }
+    nav>h2 , .section-text>h1{
+        font-weight: 500;
+        font-size: 25px;
+    }
+    .image>img{
+        margin-top: 20px;
+        height: 200px;
+        width: 70%;
+    }
+    .main-section-1{
+        width: 80%;
+    }
+    .section-1-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .section-1-images{
+        display: flex;
+        flex-direction: column;
+    }
+    .section-1-images>img{
+        width: 60%;
+    }
+    .section-1-text{
+        width: 60%;
+    }
+    .main-section-2 {
+        margin-top: 800px;
+        width: 80%;
+    }
+    .section-2-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .section-2-text{
+        width: 80%;
+    }
+    .section-2-images>img{
+        margin-top: 200px;
+        width: 60%;
+    }
+    .section-2-images>button{
+        font-weight: 400;
+        font-size: 30px;
+    }
+    .main-section-3{
+        margin-top: 600px;
+    }
+    .section-3-box{
+        margin-top: 200px;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        transform: translateX(-50px);
+
+    }
+
+    .main-section-4 {
+        margin-top: 400px;
+        width: 80%;
+    }
+    .section-4-text>h2{
+        font-weight: 500;
+        font-size: 20px;
+
+    }
+    .section-4-text{
+        width: 80%;
+    }
+    .section-4-images{
+        width: 60%;
+        height: 20px;
+    }
+
+    .section-5{
+        display: none;
+    }
+    .footer{
+        width: 60%;
+        margin-left: 40px;
+    }
+
+
+    
 }
